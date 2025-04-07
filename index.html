@@ -394,8 +394,8 @@ margin-top: 900px;
   </ul>
 </div>
 
-<audio id="bgMusic" autoplay loop>
-  <source src="Thaarame Thaarame Video Song  Kadaram Kondan  Abi Hassan, Akshara Haasan  Sid Sriram  Ghibran.mp3" type="audio/mp3">
+<audio id="bgMusic" loop>
+  <source src="thaarame.mp3" type="audio/mp3">
   Your browser does not support the audio tag.
 </audio>
 
@@ -442,7 +442,10 @@ margin-top: 900px;
     document.getElementById('maincard').style.display = 'none';
     document.body.style.overflow = 'auto'; // in case it was disabled
   }
-  
+   function closeCard() {
+    // Start the background music
+    const music = document.getElementById("bgMusic");
+    music.play();
   
 </script>
 
