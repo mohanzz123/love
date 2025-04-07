@@ -394,12 +394,19 @@ margin-top: 900px;
   </ul>
 </div>
 
+<div id="startOverlay" style="
+  position:fixed; top:0; left:0; right:0; bottom:0;
+  background:#fff0f5; display:flex;
+  justify-content:center; align-items:center;
+  flex-direction:column; z-index:9999;
+  font-family: 'Segoe UI', sans-serif;
+">
 <audio id="bgMusic" loop>
-  <source src="Finalsong.mp3" type="audio/mp3">
-  Your browser does not support the audio tag.
+  <source src="thaarame.mp3" type="audio/mp3">
 </audio>
-
 <footer>
+
+  
   "With My love, just for you, Kavitha 💘 – Mohan"
 </footer>
 
@@ -442,10 +449,11 @@ margin-top: 900px;
     document.getElementById('maincard').style.display = 'none';
     document.body.style.overflow = 'auto'; // in case it was disabled
   }
-   function closeCard() {
-    // Start the background music
-    const music = document.getElementById("bgMusic");
-    music.play();
+  const overlay = document.getElementById('startOverlay');
+  overlay.addEventListener('click', () => {
+    document.getElementById('bgMusic').play();
+    overlay.style.display = 'none';
+  });
   
 </script>
 
