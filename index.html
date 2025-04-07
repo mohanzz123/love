@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Kavitha 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+     @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+     @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(180deg, #ffdee9, #b5fffc, #ffe9c6);
+      color: #4a004a;
+      font-size: 14px;
+    }
+
+    header {
+      padding: 20px 10px;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 1.7rem;
+      color: #800040;
+      margin: 0;
+    }
+
+    .countdown {
+      font-size: 0.85rem;
+      margin-top: 5px;
+      color: #fff;
+    }
+
+    .section {
+      padding: 10px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .love-box img { 
+      height: 100px;
+      width: 100px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .love-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(145deg, #ffe0f0, #ffedcc);
+      border-radius: 14px;
+      padding: 16px;
+      margin: 14px;
+      box-shadow: 0 4px 12px rgba(255, 143, 199, 0.2);
+      animation: bounceIn 1s ease-in;
+    }
+
+    .love-box p, .love-box li {
+      font-size: 1rem;
+      color: #5a005a;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+      padding: 0 10px;
+    }
+
+    .floating-hearts {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .floating-hearts span {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      font-size: 16px;
+      animation: floatUp 8s linear infinite;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 14px;
+      font-size: 0.8rem;
+      background: linear-gradient(90deg, #ffc3a0, #ffafbd);
+      color: #550033;
+    }
+   
+.maincard {
+    font-family: 'Indie Flower', cursive !important;
+    background-color: #ffffff;
+    /*CAPE HONEY*/
+    margin: 0px;
+    padding: 0px;
+}
+
+::selection {
+    background: white;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 1px;
+    font-family: 'Amatic SC', cursive !important;
+}
+
+.color1 {
+    color: #1BBC9B
+}
+
+/*MOUNTAIN MEADOW*/
+
+.color2 {
+    color: #C0392B/*TALL POPPY*/
+}
+
+.maincard {
+  font-family: 'Indie Flower', cursive !important;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+    color: #013243;
+    /*SHERPA BLUE*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: #e0e1dc;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
+    transition: 1s;
+}
+
+.card:hover {
+    transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #BAC1BA;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #92A29C;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+
+.card .imgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: .7s;
+}
+
+.card .bark {
+    position: absolute;
+    background: #e0e1dc;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .7s;
+}
+
+.card .imgBox img {
+    min-width: 250px;
+    max-height: 400px;
+}
+
+.card:hover .imgBox {
+    transform: rotateY(-135deg);
+}
+
+.card:hover .bark {
+    opacity: 1;
+    transition: .6s;
+    box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    z-index: -1;
+    margin-top: 70px;
+}
+
+.card .details p {
+    font-size: 10px;
+    line-height: 5px;
+    transform: rotate(-10deg);
+    padding: 0 0 0 20px;
+}
+
+.card .details h4 {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+} 
+.close-btn {
+  position: absolute;
+  margin-bottom: 220px;
+margin-top: 900px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #C0392B;
+  cursor: pointer;
+  z-index: 10000;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.close-btn:hover {
+  transform: scale(1.2);
+}
+
+
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0%, 20%, 40%, 60%, 80%, 100% {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      }
+      0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+      }
+      20% {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+      60% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(0.9) rotate(0deg);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.2) rotate(360deg);
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 768px) {
+      body {
+        display: none;
+      }
+    } /* Default (desktop-first styles are already present above) */
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>For My Love, Kavitha 🕊️💖</h1>
+  <p style="color: black; font-family: 'Times New Roman', Times, serif;" class="countdown" id="countTimer">Counting every second since we met...</p>
+</header>
+
+<div class="floating-hearts" id="heartArea"></div>
+<p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; text-align: center; margin: 30px;"> <b>Hyy Angel!!</b></p>
+<section class="section love-box">
+  <p>
+    From the moment we Talked on Aug 02, 2024,<br>
+    my world became a beautiful dream 🌸<br>
+    Every second with you is a heartbeat of love 💞
+  </p>
+  <img src="kavii.png" alt="Kavii Image">
+  <p>
+    You’re not just a part of my life —<br>
+    You are my everything, my always, my forever 💖<br>
+    With you, even silence becomes poetry.
+  </p>
+</section>
+
+<div class="maincard" id="maincard">
+  <button class="close-btn" style="font-size: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" onclick="closeCard()">Click the Book and Close!! <br> ×</button> 
+  <div class="card">
+    <div class="imgBox">
+      <div class="bark"></div>
+      <img src="./last.png">
+    </div>
+    <div class="details">
+      <h4 class="color1" style="margin-left: 40px;">You're not a Normal Girl💖</h4>
+      <h4 class="color2 margin">This is for you!!</h4>
+      <p>அன்புள்ள காதலி,</p>
+      <p> உன்னை</p>
+      <p> நினைத்து</p>
+      <p> என்னை</p>
+      <p> மறப்பதுதான்</p>
+      <p> காதலென்றால்</p>
+      <p> ஆயுள் முழுதும்</p>
+      <p> வாழ்வேன்</p>
+      <p> எனை மறந்து</p>
+      <p class="text-right">மோகன் ♥</p>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <h2 style="font-family: 'Great Vibes', cursive; font-size: 1.4rem; color: #b30059;">She Told</h2>
+  <div class="gallery">
+    <p style="color:#5a005a;"> 💘</p>
+    <img style="border-radius: 10px; height: 50px; width: 70%;" src="IMG_20250407_101353.jpg">
+    <p>Yenakuhh Unna Romapahh Pudikum Kavii</p>
+    <img style="border-radius: 10px; height: 50px; width: 70%; margin-left: 120px;  " src="IMG_20250407_101430.jpg">
+    <p>Love You Kavii🕊️🌹</p>
+  </div>
+</section>
+
+<div style="display: block;" class="section love-box">
+  <h2 style="font-family: 'Great Vibes', cursive; font-size: 1.4rem; margin-bottom: 6px; color: #c40076;">💍 My Promises to You</h2>
+  <ul style="list-style: none; padding: 0; color: #5a005a; line-height: 1.6;">
+    <li>💖 Un kannil kannir vara vida matta.</li>
+    <li>💖 Un aasai ellam en aasaiya akanum.</li>
+    <li>💖 Naan epavum un koodave irupa.</li>
+    <li>💖 Unna paartha nodiyum marakkaama kaathiruppen.</li>
+  </ul>
+</div>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="Thaarame Thaarame Video Song  Kadaram Kondan  Abi Hassan, Akshara Haasan  Sid Sriram  Ghibran.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+</audio>
+
+<footer>
+  "With My love, just for you, Kavitha 💘 – Mohan"
+</footer>
+
+<script>
+  const startDate = new Date("2024-08-02T00:00:00");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = now - startDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+    document.getElementById("countTimer").innerHTML =
+      `It’s been <strong>${days}</strong>d <strong>${hours}</strong>h <strong>${minutes}</strong>m <strong>${seconds}</strong>s since I fell for you ❤️`;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown(); // initial call
+
+  // Floating hearts
+  const heartArea = document.getElementById("heartArea");
+  const colors = ['#ff4d88', '#ff80bf', '#ff66a3', '#ff9999', '#ffcccc', '#e60073'];
+  for (let i = 0; i < 30; i++) {
+    const heart = document.createElement("span");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 95 + "vw";
+    heart.style.fontSize = 14 + Math.random() * 12 + "px";
+    heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+    heart.style.animationDuration = 5 + Math.random() * 4 + "s";
+    heartArea.appendChild(heart);
+  }
+  
+  function closeCard() {
+    document.getElementById('maincard').style.display = 'none';
+  }
+
+
+  function closeCard() {
+    document.getElementById('maincard').style.display = 'none';
+    document.body.style.overflow = 'auto'; // in case it was disabled
+  }
+  
+  
+</script>
+
+</body>
+</html>
