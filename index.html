@@ -403,8 +403,8 @@ margin-top: 900px;
 ">
 <audio id="bgMusic" loop>
   <source src="Finalsong.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
 </audio>
-<footer>
 
   
   "With My love, just for you, Kavitha 💘 – Mohan"
@@ -449,11 +449,18 @@ margin-top: 900px;
     document.getElementById('maincard').style.display = 'none';
     document.body.style.overflow = 'auto'; // in case it was disabled
   }
-  const overlay = document.getElementById('startOverlay');
-  overlay.addEventListener('click', () => {
-    document.getElementById('bgMusic').play();
-    overlay.style.display = 'none';
-  });
+ function startMusic() {
+    const bgMusic = document.getElementById('bgMusic');
+    bgMusic.play().catch(err => console.log("Play blocked:", err));
+    document.removeEventListener('click', startMusic);
+    document.removeEventListener('scroll', startMusic);
+    document.removeEventListener('touchstart', startMusic);
+  }
+
+  // Add multiple event listeners in case the user scrolls, taps, or touches
+  document.addEventListener('click', startMusic);
+  document.addEventListener('scroll', startMusic);
+  document.addEventListener('touchstart', startMusic);
   
 </script>
 
